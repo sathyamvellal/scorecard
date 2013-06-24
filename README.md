@@ -8,8 +8,7 @@ For installing the app on ubuntu :
 
 	./ubuntuInstallation
 
-2. Then you are ready to use the application
-	Open a terminal and type
+2. Then you are ready to use the application. Open a terminal and type
 	
 	score
 
