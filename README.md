@@ -15,4 +15,8 @@ For installing the app on ubuntu :
 If you want the scorecard tobe visible on all workspaces then right click
 on the window that appears and select 'Always on Visible Workspace' option.
 
-NOTE : The app may not work when there is no match going on.
+NOTE : 
+1. The app is developped only for ICC Cricket Champions Trophy 2013
+	matches
+2. The app may not work when there is no match going on.
+
