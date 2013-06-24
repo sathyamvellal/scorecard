@@ -12,7 +12,7 @@ class Score(QtGui.QMainWindow):
 		QtGui.QMainWindow.__init__(self, None, QtCore.Qt.WindowStaysOnTopHint)
 		self.ui = Ui_Form()
 		self.ui.setupUi(self)
-		self.ui.refresh.clicked.connect(self.check)
+		self.ui.refresh.clicked.connect(self.refresh)
 		handle = urllib.urlopen("http://www.espncricinfo.com/icc-champions-trophy-2013/engine/current/match/566948.html")
 		content = handle.read()
 		page = content.split("<div class=\"topFrameTitle\">", 2)
@@ -23,7 +23,7 @@ class Score(QtGui.QMainWindow):
 		self.move(1650, 30)
 		self.show()
 
-	def check(self):
+	def refresh(self):
 		handle = urllib.urlopen("http://www.espncricinfo.com/icc-champions-trophy-2013/engine/current/match/566948.html")
 		content = handle.read()
 		page = content.split("<div class=\"topFrameTitle\">", 2)
