@@ -15,14 +15,6 @@ class Score(QtGui.QMainWindow):
 		self.ui = gui.Ui_Form()
 		self.ui.setupUi(self)
 		self.ui.refresh.clicked.connect(self.refresh)
-		# handle = urllib.urlopen(link)
-		# content = handle.read()
-		# page = content.split("<div class=\"topFrameTitle\">", 2)
-		# page2 = page[1].split("</div>")
-		# page3 = page2[0].split("data-text=\"")
-		# page4 = page3[1].split("\">Tweet")
-		# self.ui.score.setText(page4[0])
-		self.move(1650, 30)
 		self.show()
 
 	def refresh(self):
