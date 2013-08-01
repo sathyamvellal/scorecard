@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python2
 
 from PyQt4 import QtGui, QtCore
 # from gui import Ui_Form
@@ -18,8 +18,7 @@ class Score(QtGui.QMainWindow):
 		self.show()
 
 	def refresh(self):
-		self.link = "http://www.espncricinfo.com/tri-nation-west-indies-2013/engine/current/match/" + self.ui.matchNo.toPlainText()
-		self.link = str(self.link)
+		self.link = str(self.ui.scoreurl.toPlainText())
 		handle = urllib.urlopen(self.link)
 		content = handle.read()
 		page = content.split("<div class=\"topFrameTitle\">", 2)
