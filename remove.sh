@@ -1,5 +1,4 @@
 #! /bin/bash
-sudo rm /usr/bin/score /opt/score.py
-sudo rm /usr/bin/gui /opt/gui.py
-echo "Completed!!! All files have been removed!"
-sudo rm /usr/bin/remove /opt/remove.sh
+sudo rm -f /usr/bin/cricinfoscore /opt/cricinfoscore/score.py /usr/bin/cricinfoscore-uninstall /opt/cricinfoscore/gui.py /opt/cricinfoscore/remove.sh 
+sudo rmdir /opt/cricinfoscore/ 
+echo "Cricinfo Score App successfully uninstalled."
