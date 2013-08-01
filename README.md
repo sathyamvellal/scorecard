@@ -1,22 +1,20 @@
-This is a desktop application for getting scores on your desktop.
+## Cricinfo Score App
+
+This is a desktop application for getting scores from cricinfo
 There is a 'refresh' button given in the interface which can be used
 to refresh the scorecard.
 
-For installing the app on ubuntu :
+### Requirements
+* Python2.x (python2.7 in ubuntu)
+* PyQt4 (pyqt4-dev-tools in ubuntu)
 
-1. run the installation script
+### Installation 
+Clone the repo:  
+`git clone https://github.com/sunilkumarc/scorecard`
 
-	./ubuntuInstallation
+Run the **install.sh** script.  
+`./install.sh`
 
-2. Then you are ready to use the application. Open a terminal and type
-	
-	score
+You can now exectute the app by typing `cricinfoscore` in your terminal.
 
-If you want the scorecard tobe visible on all workspaces then right click
-on the window that appears and select 'Always on Visible Workspace' option.
-
-NOTE : 
-1. The app is developped only for ICC Cricket Champions Trophy 2013
-	matches
-2. The app may not work when there is no match going on.
-
+To uninstall run the command `cricinfoscore-uninstall` from you terminal.
